@@ -1,3 +1,8 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/c++,platformio
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,platformio
+
+### C++ ###
 # Prerequisites
 *.d
 
@@ -10,6 +15,12 @@
 # Precompiled Headers
 *.gch
 *.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
 
 # Compiled Dynamic libraries
 *.so
@@ -30,3 +41,13 @@
 *.exe
 *.out
 *.app
+
+### PlatformIO ###
+.pioenvs
+.piolibdeps
+.clang_complete
+.gcc-flags.json
+.pio
+
+# End of https://www.toptal.com/developers/gitignore/api/c++,platformio
+

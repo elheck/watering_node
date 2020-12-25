@@ -7,7 +7,7 @@ on:
       - '*'
 
 jobs:
-  build:
+  install_platformio_and_build_watering_node:
     runs-on: ubuntu-latest
 
     steps:

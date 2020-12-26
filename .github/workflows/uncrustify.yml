@@ -17,4 +17,4 @@ jobs:
     - name: Checkout this commit
       uses: actions/checkout@v2
     - name: Run style checks
-      uses: dalpapa/actions-uncrustify@v1
+      uses: dal-papa/actions-uncrustify@v1

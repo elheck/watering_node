@@ -1,7 +1,8 @@
 # watering_node
 
 A simple arduino pro mini based watering automation system meant for one plant.
-Inlcudes:
+
+Includes:
 * Soil Moisture Sensor
 * DHT11
 * Oled to show current measurements

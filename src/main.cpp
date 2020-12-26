@@ -1,9 +1,16 @@
 #include <Arduino.h>
+#include "dht_sensor.hpp"
 
-void setup() {
-  // put your setup code here, to run once:
+static constexpr int DHT_PIN = 5;
+
+DHTSensor dht(DHT_PIN);
+
+void setup(void) {
+  dht.Begin();
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop(void) {
+  auto humidity = dht.GetHumidity();
+  auto temperature = dht.GetTemperature();
+  auto heat_index = dht.GetHeatIndex();
 }

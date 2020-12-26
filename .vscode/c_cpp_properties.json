@@ -6,9 +6,13 @@
         {
             "name": "Linux",
             "includePath": [
+                "/home/aron/Code/watering_node/lib/dht",
+                "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/Adafruit Unified Sensor",
+                "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/DHT sensor library",
                 "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/U8g2/src",
                 "/home/aron/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                 "/home/aron/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/DHT/src",
                 "/home/aron/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                 "/home/aron/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                 "/home/aron/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
@@ -22,9 +26,13 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
+                    "/home/aron/Code/watering_node/lib/dht",
+                    "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/Adafruit Unified Sensor",
+                    "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/DHT sensor library",
                     "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/U8g2/src",
                     "/home/aron/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                     "/home/aron/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/DHT/src",
                     "/home/aron/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                     "/home/aron/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                     "/home/aron/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",

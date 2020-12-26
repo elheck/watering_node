@@ -1,0 +1,8 @@
+src/main.cpp:7:0: style: The function 'loop' is never used. [unusedFunction]
+
+^
+src/main.cpp:3:0: style: The function 'setup' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+

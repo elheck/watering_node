@@ -7,7 +7,7 @@ class SoilMoistureSensor {
  public:
   SoilMoistureSensor() = delete;
   ~SoilMoistureSensor() = default;
-  SoilMoistureSensor(uint8_t sensor_pin);
+  explicit SoilMoistureSensor(uint8_t sensor_pin);
   auto GetSoilMoistureInPercent() const noexcept -> const int;
 
  private:

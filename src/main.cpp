@@ -7,12 +7,11 @@
 
 DHTSensor dht(settings::dht::DHT_PIN);
 SoilMoistureSensor hygro(settings::hygro::SOIL_HUMIDITY_PIN);
-Oled oled(settings::oled::SCL_PIN, settings::oled::SDA_PIN, settings::oled::CS_PIN,
-          settings::oled::DC_PIN, settings::oled::RESET_PIN);
+Oled display;
 
 void setup(void) {
   dht.Begin();
-  oled.Begin();
+  display.Begin();
 }
 
 void loop(void) {
@@ -22,5 +21,4 @@ void loop(void) {
   values.heat_index = dht.GetHeatIndex();
   values.soil_humidity = hygro.GetSoilMoistureInPercent();
   values.pump_state = "off";
-  oled.UpdateScreen(values);
 }

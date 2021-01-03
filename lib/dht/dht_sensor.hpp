@@ -8,11 +8,12 @@ class DHTSensor {
  public:
   DHTSensor() = delete;
   ~DHTSensor() = default;
-  DHTSensor(uint8_t dht_pin);
+  explicit DHTSensor(uint8_t dht_pin);
   auto Begin() noexcept -> void;
   auto GetTemperature() noexcept -> const float;
   auto GetHumidity() noexcept -> const float;
   auto GetHeatIndex() noexcept -> const float;
+
  private:
   DHT dht11_;
 };

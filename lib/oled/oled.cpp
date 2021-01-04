@@ -14,7 +14,7 @@ auto Oled::Begin() noexcept -> void {
   delay(2000);
   oled_.clearDisplay();
   oled_.setTextSize(1);
-  oled_.setTextColor(settings::oled::TEXT_COLOR);
+  oled_.setTextColor(WHITE);
 }
 
 auto Oled::Update(SensorValues values) noexcept -> void {

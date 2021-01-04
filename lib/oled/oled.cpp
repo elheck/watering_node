@@ -20,7 +20,7 @@ auto Oled::Begin() noexcept -> void {
 auto Oled::Update(SensorValues values) noexcept -> void {
   oled_.setCursor(0, 0);
 
-  oled_.print("Temperature: ");
+  oled_.print("Temperatur: ");
   oled_.print(values.air_temperature);
   oled_.println("°C");
 

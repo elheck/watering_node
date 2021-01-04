@@ -16,9 +16,6 @@ void setup(void) {
 
 void loop(void) {
   SensorValues values;
-  values.air_humidity = dht.GetHumidity();
-  values.air_temperature = dht.GetTemperature();
-  values.heat_index = dht.GetHeatIndex();
-  values.soil_humidity = hygro.GetSoilMoistureInPercent();
-  values.pump_state = "off";
+  values.ReadSensorValues(&dht, &hygro);
+  values.pump_state = pump_state::OFF;
 }

@@ -10,6 +10,7 @@
             "includePath": [
                 "/home/aron/Code/watering_node/lib/dht",
                 "/home/aron/Code/watering_node/lib/globals",
+                "/home/aron/Code/watering_node/lib/oled",
                 "/home/aron/Code/watering_node/lib/soil_moisture",
                 "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/Adafruit BusIO",
                 "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/Adafruit GFX Library",
@@ -18,7 +19,6 @@
                 "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/DHT sensor library",
                 "/home/aron/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                 "/home/aron/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
-                "/home/aron/Code/watering_node/lib/oled",
                 "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/DHT/src",
                 "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/U8g2/src",
                 "/home/aron/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
@@ -36,6 +36,7 @@
                 "path": [
                     "/home/aron/Code/watering_node/lib/dht",
                     "/home/aron/Code/watering_node/lib/globals",
+                    "/home/aron/Code/watering_node/lib/oled",
                     "/home/aron/Code/watering_node/lib/soil_moisture",
                     "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/Adafruit BusIO",
                     "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/Adafruit GFX Library",
@@ -44,7 +45,6 @@
                     "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/DHT sensor library",
                     "/home/aron/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                     "/home/aron/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
-                    "/home/aron/Code/watering_node/lib/oled",
                     "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/DHT/src",
                     "/home/aron/Code/watering_node/.pio/libdeps/pro16MHzatmega328/U8g2/src",
                     "/home/aron/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",

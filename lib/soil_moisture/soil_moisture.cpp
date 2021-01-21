@@ -2,7 +2,7 @@
 #include <Arduino.h>
 #include "setting.hpp"
 
-SoilMoistureSensor::SoilMoistureSensor(uint8_t sensor_pin) : sensor_pin_{sensor_pin} {
+SoilMoistureSensor::SoilMoistureSensor() : sensor_pin_(settings::hygro::SOIL_HUMIDITY_PIN) {
 }
 
 auto SoilMoistureSensor::GetSoilMoistureInPercent() const noexcept -> const int {

@@ -23,5 +23,9 @@ namespace dht {
 static constexpr int DHT_PIN = 5;
 }
 
+namespace encoder {
+static constexpr uint8_t CLK = 2;
+static constexpr uint8_t DT = 3;
+}  // namespace encoder
 }  // namespace settings
 #endif

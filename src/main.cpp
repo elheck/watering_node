@@ -2,12 +2,16 @@
 #include "dht_sensor.hpp"
 #include "globals.hpp"
 #include "oled.hpp"
+#include "rotary_encoder.hpp"
 #include "setting.hpp"
 #include "soil_moisture.hpp"
 
+auto HandleRotaryEncoderRotation(long difference) noexcept -> void;
+
 DHTSensor dht(settings::dht::DHT_PIN);
-SoilMoistureSensor hygro(settings::hygro::SOIL_HUMIDITY_PIN);
+SoilMoistureSensor hygro;
 Oled display;
+RotaryEncoder rotary_encoder;
 
 void setup(void) {
   dht.Begin();
@@ -15,7 +19,21 @@ void setup(void) {
 }
 
 void loop(void) {
+  auto difference = rotary_encoder.GetDifference();
+  if (difference != 0) {
+    HandleRotaryEncoderRotation(difference);
+  }
   SensorValues values;
   values.ReadSensorValues(&dht, &hygro);
   values.pump_state = pump_state::OFF;
+  display.Update(values);
+}
+
+/**
+ * @brief Handles the rotary difference and routes 
+ * it through to the display.
+ * 
+ * @param difference Rotary difference in increments. 
+ */
+auto HandleRotaryEncoderRotation(long difference) noexcept -> void {
 }

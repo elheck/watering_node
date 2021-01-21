@@ -5,9 +5,18 @@
 
 class SoilMoistureSensor {
  public:
-  SoilMoistureSensor() = delete;
-  ~SoilMoistureSensor() = default;
-  explicit SoilMoistureSensor(uint8_t sensor_pin);
+  virtual ~SoilMoistureSensor() = default;
+  SoilMoistureSensor();
+
+  /**
+   * @brief Get the soil moisture reading from the sensor
+   * in percent.
+   * The dry and wet values have to be inputted manually for now.
+   * There should be a live manual calibration selectable in the menu
+   * in the future.
+   * 
+   * @return Current value reading in percent 
+   */
   auto GetSoilMoistureInPercent() const noexcept -> const int;
 
  private:

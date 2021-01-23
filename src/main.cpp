@@ -2,6 +2,7 @@
 #include "dht_sensor.hpp"
 #include "globals.hpp"
 #include "oled.hpp"
+#include "perestaltic_pump.hpp"
 #include "rotary_encoder.hpp"
 #include "setting.hpp"
 #include "soil_moisture.hpp"
@@ -12,6 +13,7 @@ DHTSensor dht(settings::dht::DHT_PIN);
 SoilMoistureSensor hygro;
 Oled display;
 RotaryEncoder rotary_encoder;
+PerestalticPump6V pump;
 
 void setup(void) {
   dht.Begin();
@@ -25,7 +27,7 @@ void loop(void) {
   }
   SensorValues values;
   values.ReadSensorValues(&dht, &hygro);
-  values.pump_state = pump_state::OFF;
+  values.pump_state = binary_states::OFF;
   display.Update(values);
 }
 

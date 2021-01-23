@@ -6,10 +6,15 @@
 #include "dht_sensor.hpp"
 #include "soil_moisture.hpp"
 
-namespace pump_state {
+namespace binary_states {
 static constexpr char ON[] = "on";
 static constexpr char OFF[] = "off";
-}  // namespace pump_state
+}  // namespace binary_states
+
+enum class PumpState {
+  ON,
+  OFF
+};
 
 using SensorValues = struct SensorValues_ {
   int soil_humidity;
@@ -24,7 +29,7 @@ using SensorValues = struct SensorValues_ {
   long heat_index;
   long max_heat_index = 0;
   long min_heat_index = 100;
-  String pump_state = pump_state::OFF;
+  String pump_state = binary_states::OFF;
 
   auto ReadSensorValues(DHTSensor *dht, SoilMoistureSensor *soil_moisture_sensor) noexcept -> void {
     air_humidity = dht->GetHumidity();

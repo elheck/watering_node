@@ -27,5 +27,9 @@ namespace encoder {
 static constexpr uint8_t CLK = 2;
 static constexpr uint8_t DT = 3;
 }  // namespace encoder
+
+namespace pump {
+static constexpr uint8_t PUMP_PIN = 6;
+}
 }  // namespace settings
 #endif

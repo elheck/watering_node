@@ -13,7 +13,7 @@ jobs:
     - name: Checkout this commit
       uses: actions/checkout@v2
     - name: Run style checks
-      uses: coleaeason/actions-uncrustify@v1
+      uses: coleaeason/actions-uncrustify@v1.1
    
   install_platformio_and_build_watering_node:
     runs-on: ubuntu-latest

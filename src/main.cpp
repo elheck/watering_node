@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "dht_sensor.hpp"
 #include "globals.hpp"
-#include "oled.hpp"
+#include "i2c_slave.hpp"
 #include "perestaltic_pump.hpp"
 #include "rotary_encoder.hpp"
 #include "setting.hpp"
@@ -11,13 +11,13 @@ auto HandleRotaryEncoderRotation(long difference) noexcept -> void;
 
 DHTSensor dht(settings::dht::DHT_PIN);
 SoilMoistureSensor hygro;
-Oled display;
 RotaryEncoder rotary_encoder;
 PerestalticPump6V pump;
 
 void setup(void) {
+  Serial.begin(9600);
+  Serial.println("Setup start");
   dht.Begin();
-  display.Begin();
 }
 
 void loop(void) {
@@ -28,7 +28,6 @@ void loop(void) {
   SensorValues values;
   values.ReadSensorValues(&dht, &hygro);
   values.pump_state = binary_states::OFF;
-  display.Update(values);
 }
 
 /**

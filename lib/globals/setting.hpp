@@ -12,13 +12,6 @@ static constexpr uint16_t VALUE_DRY = 1020;
 static constexpr uint16_t VALUE_WET = 20;
 }  // namespace hygro
 
-namespace oled {
-static constexpr uint8_t SCREEN_WIDTH = 128;
-static constexpr uint8_t SCREEN_HEIGHT = 64;
-static constexpr int8_t RESET = -1;
-static constexpr uint8_t DEVICE_ADDRESS = 0x3D;
-}  // namespace oled
-
 namespace dht {
 static constexpr int DHT_PIN = 5;
 }
@@ -31,5 +24,10 @@ static constexpr uint8_t DT = 3;
 namespace pump {
 static constexpr uint8_t PUMP_PIN = 6;
 }
+
+namespace i2c_slave {
+static constexpr uint8_t OWN_I2C_ADDRESS = 0x66;
+}
+
 }  // namespace settings
 #endif

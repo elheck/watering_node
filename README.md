@@ -3,10 +3,9 @@
 A simple arduino pro mini based watering automation system meant for one plant.
 
 Includes:
-* A 20 pulse rotary encoder with switch to control the settings
 * Soil Moisture Sensor
 * DHT11
-* Oled to show current measurements
+* i2c slave to send data some way of visualization 
 * A 6V perestaltic pump to water the plant
 
 Will posssibly maybe include sometime in the future:

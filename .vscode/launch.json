@@ -12,9 +12,9 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "/home/aron/Code/watering_node/.pio/build/pro16MHzatmega328/firmware.elf",
+            "executable": "/workspaces/watering_node/.pio/build/pro16MHzatmega328/firmware.elf",
             "projectEnvName": "pro16MHzatmega328",
-            "toolchainBinDir": "/home/aron/.platformio/packages/toolchain-atmelavr/bin",
+            "toolchainBinDir": "/home/vscode/.platformio/packages/toolchain-atmelavr/bin",
             "preLaunchTask": {
                 "type": "PlatformIO",
                 "task": "Pre-Debug"
@@ -25,9 +25,9 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "/home/aron/Code/watering_node/.pio/build/pro16MHzatmega328/firmware.elf",
+            "executable": "/workspaces/watering_node/.pio/build/pro16MHzatmega328/firmware.elf",
             "projectEnvName": "pro16MHzatmega328",
-            "toolchainBinDir": "/home/aron/.platformio/packages/toolchain-atmelavr/bin",
+            "toolchainBinDir": "/home/vscode/.platformio/packages/toolchain-atmelavr/bin",
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]

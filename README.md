@@ -1,6 +1,6 @@
 # watering_node
 
-A simple arduino pro mini based watering automation system meant for one plant.
+A simple arduino pro mini based watering automation system meant for one plant. Can act alone with programed parameters, but is also a I2c Slave through which parameters can be set and data can be streamed.
 
 Includes:
 * Soil Moisture Sensor
@@ -11,3 +11,4 @@ Includes:
 Will posssibly maybe include sometime in the future:
 * RTC to have a scheduled watering time
 * A fan to locally reduce air moisture
+* A PH meter to measure water PH

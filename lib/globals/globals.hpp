@@ -11,6 +11,11 @@ static constexpr char ON[] = "on";
 static constexpr char OFF[] = "off";
 }  // namespace binary_states
 
+enum class I2CSlaveCommand : uint8_t {
+  NONE = 0x0,
+  SEND_SENSOR_VALUES = 0x1
+};
+
 enum class PumpState {
   ON,
   OFF
